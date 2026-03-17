@@ -61,18 +61,35 @@
 
 # Ex- 5 
 
-age = int(input("Enter your age: ")) 
+# age = int(input("Enter your age: ")) 
 
-if age >= 21: 
-    education = input("Are you complete your Graduation ?(Yes/No)").lower() 
-    if education == "yes": 
-        print("Congratulation !! You are Eligible for the Job") 
-    else: 
-        print("Complete your Graduation First") 
-if age < 21 and age !=0 : 
-    experience = input("Are you have minimum 5 year's work experience ?(Yes/No)").lower() 
-    if experience == "yes": 
-        print("You are eligible") 
-    else: 
-        print("You are not Eligible") 
+# if age >= 21: 
+#     education = input("Are you complete your Graduation ?(Yes/No)").lower() 
+#     if education == "yes": 
+#         print("Congratulation !! You are Eligible for the Job") 
+#     else: 
+#         print("Complete your Graduation First") 
+# if age < 21 and age !=0 : 
+#     experience = input("Are you have minimum 5 year's work experience ?(Yes/No)").lower() 
+#     if experience == "yes": 
+#         print("You are eligible") 
+#     else: 
+#         print("You are not Eligible") 
+
+# shortcut :-  
+
+# age = int(input("Enter your age: ")) 
+# education = input("Enter your education(highschool/graduate/college/master): ").lower() 
+# experence = int(input("Enter your yerars of experience: ")) 
+
+# if (age >= 21 and education in ["graduate", "master"]) or experence >= 5: 
+#     print("You are eligible for the Job !✅ ") 
+#     if experence < 5: 
+#         print("-You are eligible by education and age") 
+#     elif age < 21 and experence >= 5 : 
+#         print("- You are eligible by work experience ! ")
+# else: 
+#     print("You are not eligible")
+
+# Example 6: Comparison Operators
  
