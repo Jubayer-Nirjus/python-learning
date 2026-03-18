@@ -147,10 +147,16 @@
 # elif math < 40 or science < 40 or english < 40: 
 #     print("You are failed at least one subject") 
 
-# Example 8: Using 'or' for Multiple Options 
+# # Example 8: Using 'or' for Multiple Options 
 
+# year = int(input("Enter the year: ")) 
 
-    
+# if ( year % 4 == 0 and year % 100!= 0 ) or (year % 400 == 0): 
+#     print(f"{year} is leap year")
+# # elif year % 100 == 0 and year % 400!=0 :
+# #     print(f"{year} is not a leap year")
+# else: 
+#     print(f"{year} is not a leap year")    
 
 
 
