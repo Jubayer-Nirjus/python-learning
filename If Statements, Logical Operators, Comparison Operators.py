@@ -91,5 +91,66 @@
 # else: 
 #     print("You are not eligible")
 
-# Example 6: Comparison Operators
- 
+# # Example 6: Comparison Operators 
+
+# a = int(input("Enter first number: ")) 
+# b = int(input("Enter second number: "))
+# c = int(input("Enter third number: ")) 
+
+# print("\nComparison Result---") 
+
+# if a > b : 
+#     print(f"{a} is Greater than {b}") 
+# elif a < b : 
+#     print(f"{b} is greater than {a}") 
+# else: 
+#     print(f"{a} and {b} are equal") 
+
+# if b > c : 
+#     print(f"{b} is greater than {c}") 
+# elif b < c : 
+#     print(f"{c} is greater than {b}") 
+# else : 
+#     print (f"{b} and {c} are equal") 
+
+# if a >= b and a >= c: 
+#     print(f"{a} is the largest number") 
+# elif b >= a and b >= c: 
+#     print(f"{b} is the largest number") 
+# else: 
+#     print(f"{c} is the largest number") 
+
+# if a == b == c : 
+#      print("All numbers are equal")
+# elif a == b or a == c or b == c: 
+#     print("Two numbers ar Equal") 
+# else: 
+#     print("All number are deffents") 
+
+# # Example 7: Multiple Conditions with 'and'
+
+# math = int(input("Enter your math's number: ")) 
+# english = int(input("Enter your english's number: ")) 
+# science = int(input("Enter your science's number: ")) 
+
+# total = (math + english + science) 
+# percentage = (f"{total/3:.2f}")
+
+# if math > 100 or english > 100 or science > 100:
+#     print("Invalid number")
+# elif math >= 40 and english >= 40 and science >= 40:
+#     print(f"You are passed and your percentage is {percentage}%")
+#     if total >= 200:
+#         print("You got good total marks ")
+#     if science >= 60: 
+#         print("You make excellent results with great mark in Science ") 
+# elif math < 40 or science < 40 or english < 40: 
+#     print("You are failed at least one subject") 
+
+# Example 8: Using 'or' for Multiple Options 
+
+
+    
+
+
+
