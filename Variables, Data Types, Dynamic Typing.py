@@ -190,4 +190,7 @@
 # f = True 
 # g = {"apple": "200"} 
 
-# print(type(g), type(a), type(d), type(f), type(e), type(d), type(c))
+# print(type(g), type(a), type(d), type(f), type(e), type(d), type(c))  
+
+# Ex - 4 
+a = int(input("E")) 

@@ -156,7 +156,76 @@
 # # elif year % 100 == 0 and year % 400!=0 :
 # #     print(f"{year} is not a leap year")
 # else: 
-#     print(f"{year} is not a leap year")    
+#     print(f"{year} is not a leap year")  
+# 
+#   
+
+## Example 9: Using 'not' for Inverse Logic 
+
+# age = int(input("Enter your age: ")) 
+# is_citigzen = input("Are you citizen ? (yes/no): ").lower()
+
+# if not age >= 18 and is_citigzen == "yes" :
+#     print("You are Underage. How will you get citizenship in under 18 ? ")
+# elif not age >= 18:
+#     print("You are underage !! ") 
+# elif age >= 18 and is_citigzen == "yes" :
+#     print("You are able to get your vote !!") 
+# elif age >= 18 and is_citigzen != "yes" : 
+#     print("You have to must be citizen of this country !! ")
+
+## Example 10: Combining All Concepts 
+
+s_age = int(input("Enter your age: ")) 
+if not s_age < 12 or s_age > 60:
+    occupasion = input("Are you student ?(Yes/No): ").lower()
+    if occupasion == "yes":
+        st_id = input("Have you show me your student id? (yes/no): ").lower() 
+
+group = input("Are you come with any group ?(yes/no): ").lower()
+if group == "yes": 
+    grp_nm = int(input("Enter how many member are in your group?: ")) 
+
+day = input("Enter which day do you want to book ?(sat/sun/mon): ").lower() 
+
+if day == "mon":
+    if s_age < 12 and grp_nm > 5:
+        print("Your ticket price is 40 Tk !!") 
+    elif s_age < 12: 
+        print("Your ticket price is 50 Tk only !!") 
+
+    if s_age > 60 and grp_nm > 5: 
+        print("You are senior citizen, so your ticket price is 90 Tk only !!") 
+    elif s_age > 60 : 
+        print("You are senior citizen, so your ticket price is 100 Tk only !!") 
+    if st_id == "yes" and grp_nm > 5: 
+        print("You got student discount, your ticket price is 90 tk ")
+    elif st_id == "yes": 
+        print("You got student discount, your ticket price is 100 tk ")
+    elif grp_nm > 5: 
+        print("You get 10% discount, your ticket price is 130 Tk") 
+elif not day == "mon":
+    if s_age < 12 and grp_nm > 5:
+        print("Your ticket price is 40 Tk !!") 
+    elif s_age < 12: 
+        print("Your ticket price is 50 Tk only !!") 
+    if s_age > 60 and grp_nm > 5: 
+        print("You are senior citizen, so your ticket price is 90 Tk only !!") 
+    elif s_age > 60 : 
+        print("You are senior citizen, so your ticket price is 100 Tk only !!") 
+    if st_id == "yes" and grp_nm > 5: 
+        print("You got student discount, your ticket price is 90 tk ")
+    elif st_id == "yes": 
+        print("You got student discount, your ticket price is 100 tk ")
+    elif grp_nm > 5: 
+        print("You get 10% discount, your ticket price is 130 Tk") 
+else : 
+    print("Your ticket price is 200 Tk !! ")
 
 
 
+
+ 
+    
+
+    
