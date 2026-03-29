@@ -176,56 +176,48 @@
 
 ## Example 10: Combining All Concepts 
 
-s_age = int(input("Enter your age: ")) 
-if not s_age < 12 or s_age > 60:
-    occupasion = input("Are you student ?(Yes/No): ").lower()
-    if occupasion == "yes":
-        st_id = input("Have you show me your student id? (yes/no): ").lower() 
+age = int(input("Enter your age: "))
+is_student = input("Are you student? (yes/no): ").lower()
+is_tuesday = input("Is it tuesday? (yes/no): ").lower() 
+group_size = int(input("How many tickets? ")) 
 
-group = input("Are you come with any group ?(yes/no): ").lower()
-if group == "yes": 
-    grp_nm = int(input("Enter how many member are in your group?: ")) 
+if age < 12: 
+    base_price = 100 
+    category = "Child" 
+elif age >= 60: 
+    base_price = 150 
+    category = "Senior Citizen" 
+elif is_student == "yes": 
+    base_price = 200 
+    category = "Student"
+else: 
+    base_price = 200 
+    category = "Adult" 
 
-day = input("Enter which day do you want to book ?(sat/sun/mon): ").lower() 
+print(f"\n--- Ticket Details ---")
+print(f"Category: {category}") 
+print(f"Base Price: {base_price} Tk") 
 
-if day == "mon":
-    if s_age < 12 and grp_nm > 5:
-        print("Your ticket price is 40 Tk !!") 
-    elif s_age < 12: 
-        print("Your ticket price is 50 Tk only !!") 
+if is_tuesday == "yes":
+    base_price -= 50 
+    print("Tuesday discount; -50 Tk") 
+if group_size >= 5: 
+    group_discount = base_price * 0.1 
+    base_price -= group_discount 
+    print(f"Group discount (10%): -{group_discount:.0f} Tk") 
 
-    if s_age > 60 and grp_nm > 5: 
-        print("You are senior citizen, so your ticket price is 90 Tk only !!") 
-    elif s_age > 60 : 
-        print("You are senior citizen, so your ticket price is 100 Tk only !!") 
-    if st_id == "yes" and grp_nm > 5: 
-        print("You got student discount, your ticket price is 90 tk ")
-    elif st_id == "yes": 
-        print("You got student discount, your ticket price is 100 tk ")
-    elif grp_nm > 5: 
-        print("You get 10% discount, your ticket price is 130 Tk") 
-elif not day == "mon":
-    if s_age < 12 and grp_nm > 5:
-        print("Your ticket price is 40 Tk !!") 
-    elif s_age < 12: 
-        print("Your ticket price is 50 Tk only !!") 
-    if s_age > 60 and grp_nm > 5: 
-        print("You are senior citizen, so your ticket price is 90 Tk only !!") 
-    elif s_age > 60 : 
-        print("You are senior citizen, so your ticket price is 100 Tk only !!") 
-    if st_id == "yes" and grp_nm > 5: 
-        print("You got student discount, your ticket price is 90 tk ")
-    elif st_id == "yes": 
-        print("You got student discount, your ticket price is 100 tk ")
-    elif grp_nm > 5: 
-        print("You get 10% discount, your ticket price is 130 Tk") 
-else : 
-    print("Your ticket price is 200 Tk !! ")
+print(f"Final price: {base_price:.0f} Tk per ticket") 
+print(f"Total for {group_size} Tickets: {base_price * group_size:.0f} Tk") 
+
+print("\n--- Special Offers ---") 
+
+if (age < 12 or age >= 60) and is_tuesday == "yes": 
+    print("You Got Free popcorn !") 
+
+if is_student == "yes" and group_size >=3: 
+    print("You got , 1 ticket Free !") 
+if not (age < 12 ) and not (is_student == "yes") and group_size == 1: 
+    print("Solo adult offer: Buy 1 get 1 free drink!") 
 
 
-
-
- 
-    
-
-    
+     

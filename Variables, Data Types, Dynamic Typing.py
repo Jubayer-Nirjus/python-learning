@@ -192,5 +192,5 @@
 
 # print(type(g), type(a), type(d), type(f), type(e), type(d), type(c))  
 
-# Ex - 4 
-a = int(input("E")) 
+# # Ex - 4 
+# a = int(input("E")) 
