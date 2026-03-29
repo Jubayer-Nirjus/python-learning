@@ -187,15 +187,12 @@ print(f"Modified list: {my_list}")
 # Tuple is immutable (cannot change)
 my_tuple = (1, 2, 3)
 print(f"Original tuple: {my_tuple}")
-# my_tuple[0] = 10       # ❌ This will cause TypeError!
-# my_tuple.append(4)     # ❌ No append method!
-# my_tuple.remove(2)     # ❌ No remove method!
+
 
 # Tuple can only be accessed, not modified
-print(f"Tuple access: {my_tuple[0]}")  # ✅ Can access
-print(f"Tuple count: {my_tuple.count(2)}")  # ✅ count method works
-print(f"Tuple index: {my_tuple.index(3)}")  # ✅ index method works
-
+print(f"Tuple access: {my_tuple[0]}")  
+print(f"Tuple count: {my_tuple.count(2)}")  # 
+print(f"Tuple index: {my_tuple.index(3)}")  # 
 # To "change" a tuple, you must create a new one
 new_tuple = my_tuple + (4, 5)
 print(f"New tuple (created from old): {new_tuple}")
