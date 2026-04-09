@@ -22,4 +22,5 @@
 # print()  
 
 # Ex-2 
-fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"]
+# fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"] 
+
